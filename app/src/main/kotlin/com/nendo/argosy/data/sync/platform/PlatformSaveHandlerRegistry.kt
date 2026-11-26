@@ -52,6 +52,7 @@ class PlatformSaveHandlerRegistry @Inject constructor(
      */
     private val folderHandlers: Map<String, FolderSaveHandler> = listOf(
         FolderSaveHandler(context, fal, saveArchiver, platformSlug = "vita"),
+        FolderSaveHandler(context, fal, saveArchiver, platformSlug = "switch2"),
         PspFolderHandler(context, fal, saveArchiver),
         CategorySplitFolderHandler(
             context,

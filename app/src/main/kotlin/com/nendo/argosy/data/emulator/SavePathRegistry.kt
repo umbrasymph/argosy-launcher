@@ -354,6 +354,15 @@ object SavePathRegistry {
             usesPackageTemplate = true,
             supported = false
         ),
+        "banana_native" to SavePathConfig(
+            emulatorId = "banana_native",
+            defaultPaths = listOf(
+                "{extStorage}/Android/data/{package}/files/nand/user/save"
+            ),
+            saveExtensions = listOf("*"),
+            usesFolderBasedSaves = true,
+            usesPackageTemplate = true
+        ),
         "eden_duo" to SavePathConfig(
             emulatorId = "eden_duo",
             defaultPaths = listOf(
@@ -962,7 +971,8 @@ object SavePathRegistry {
         "com.sa_moo_rai.picpic" to "picpic",
         "com.pixelrespawn.linkboy" to "linkboy",
         "com.phobos.emulator" to "phobos",
-        "dev.eden.nx2" to "eden_nx2"
+        "dev.eden.nx2" to "eden_nx2",
+        "dev.bananative.android" to "banana_native"
     )
 
     private val packagePrefixToConfigId = mapOf(

@@ -722,7 +722,7 @@ object EmulatorRegistry {
             defaultLaunchMethod = LaunchMethod.SHELL,
             downloadUrl = "https://git.eden-emu.dev/moceure/BananaNative",
             releaseSource = ReleaseSource.Gitea("https://git.eden-emu.dev", "moceure/BananaNative")
-        )
+        ),
         EmulatorDef(
             id = "drastic",
             packageName = "com.dsemu.drastic",
